@@ -27,7 +27,7 @@ html {
 
 body {
   overflow-x: hidden;
-  font-family: "Monserrat", sans-serif;
+  font-family: "Montserrat", sans-serif;
   line-height: 1.4;
   margin: 0 auto;
 
@@ -163,7 +163,7 @@ h1 {
 
 .bulletin .img-container {
   padding: 0 0 1rem 0;
-  border: 0
+  border: 0;
 }
 
 .bulletin .content {
@@ -207,3 +207,41 @@ h1 {
   padding: 1rem;
 }
 
+
+/*Thesis*/
+.thesis {
+  display: block;
+  padding: 2rem 1.5rem;
+  text-align: center;
+}
+
+.gallery {
+  display: flex;
+  width: auto;
+  text-align: left;
+}
+
+video {
+  width: 100%;
+}
+
+.exhibits {
+  display: block;
+  width: 40%;
+}
+
+.exhibit {
+  display: flex;
+}
+
+.exhibit .img-container{
+  width: 35%;
+}
+
+.exhibit img {
+  width: 100%;
+}
+
+.exhibit .content {
+  width: 65%;
+}
