@@ -132,4 +132,46 @@ h1 {
 
 
 /*Main*/
+.main {
+  display: flex;
+  padding: 0 1.5rem;
+  background-color: #ffffff;
+  margin-top: 4rem;
+}
+
+.main .img-container {
+  width: 60%;
+  padding-top: 2rem;
+  border-right: 1px solid #D9D9D9;
+}
+
+.main img {
+  width: 100%;
+}
+
+.bulletins {
+  width: 37%;
+  padding: 1rem;
+}
+
+.bulletin {
+  display: flex;
+  min-width: 35%;
+  margin-top: 1rem;
+  border-bottom: 3px double #D9D9D9;
+}
+
+.bulletin .img-container {
+  padding: 0 0 1rem 0;
+  border: 0
+}
+
+.bulletin .content {
+  width: 65%;
+  padding-left: 1rem;
+}
+
+.guest {
+  background-color: #D9D9D9;
+}
 
