@@ -36,7 +36,7 @@ html {
 body {
   overflow-x: hidden;
   font-family: "Roboto", sans-serif;
-  line-height: 1.ß;
+  line-height: 1.4;
   margin: 0 auto;
 
 } 
@@ -201,7 +201,6 @@ button:hover {
 }
 
 .main p {
-  padding: 2rem 0;
   font-size: 1.25rem;
   color: #000000;
 }
@@ -249,7 +248,7 @@ button:hover {
 /*Grid*/
 .grid {
   display: block;
-  padding: 2rem 4.5rem;
+  padding: 0 4.5rem;
   text-align: center;
   background-color: #e9e9e9;
 }
@@ -258,6 +257,7 @@ button:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding-top: 2rem;
   width: 100%;
   text-align: left;
 }
@@ -274,7 +274,11 @@ button:hover {
 }
 
 .sixpack .content{
-  padding: 1rem;
+  padding: 1rem 1rem 1.5rem 1rem;
+}
+
+.course {
+  padding: .5rem 0;
 }
 
 
