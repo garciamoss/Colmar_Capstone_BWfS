@@ -1,24 +1,32 @@
 @font-face {
-  font-family: 'Montserrat';
-  font-style: italic;
-  font-weight: 400;
-  src: local('Montserrat Italic'), local('Montserrat-Italic'), url(https://fonts.gstatic.com/s/montserrat/v11/-iqwlckIhsmvkx0N6rwPmhampu5_7CjHW5spxoeN3Vs.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
-}
-@font-face {
-  font-family: 'Montserrat';
+  font-family: 'Cabin';
   font-style: normal;
   font-weight: 400;
-  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v11/zhcz-_WihjSQC0oHJ9TCYAzyDMXhdD8sAj6OAJTFsBI.woff2) format('woff2');
+  src: local('Cabin'), local('Cabin-Regular'), url(https://fonts.gstatic.com/s/cabin/v12/4VMQLG5UaE3m5rr_emmAqaCWcynf_cDxXwCLxiixG1c.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
 @font-face {
-  font-family: 'Montserrat';
+  font-family: 'Cabin';
   font-style: normal;
   font-weight: 700;
-  src: local('Montserrat Bold'), local('Montserrat-Bold'), url(https://fonts.gstatic.com/s/montserrat/v11/IQHow_FEYlDC4Gzy_m8fcmaVI6zN22yiurzcBKxPjFE.woff2) format('woff2');
+  src: local('Cabin Bold'), local('Cabin-Bold'), url(https://fonts.gstatic.com/s/cabin/v12/82B-3YlzWJm8zbCrVEmc_nYhjbSpvc47ee6xR_80Hnw.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Roboto Italic'), local('Roboto-Italic'), url(https://fonts.gstatic.com/s/roboto/v18/vSzulfKSK0LLjjfeaxcREhkAz4rYn47Zy2rvigWQf6w.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/oMMgfZMQthOryQo9n22dcuvvDin1pK8aKteLpeZ5c0A.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
 
 /*Universal Rules*/
 html {
@@ -27,8 +35,8 @@ html {
 
 body {
   overflow-x: hidden;
-  font-family: "Montserrat", sans-serif;
-  line-height: 1.4;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.ß;
   margin: 0 auto;
 
 } 
@@ -39,10 +47,29 @@ body {
   width: 100%;
 }
 
-a {
-  text-decoration: none;
+h1, h2, .navbar {
+  font-family: "Cabin", sans-serif;
+  font-weight: 700;
+  margin: 0;
 }
 
+a {
+  text-decoration: none;
+  color: #318CE7;
+}
+
+
+a:hover {
+    background-color: #ffa812;
+    color: #ffffff;
+}
+
+
+p {
+  font-size: 1.5rem; 
+  color: #6b6b6b;
+  margin: 0;
+}
 
 /*Header Section*/
 header {
@@ -76,6 +103,7 @@ header {
 
 .light {
   color: #9b9b9b;
+  font-weight: 300;
 }
 
 h2 {
@@ -85,6 +113,7 @@ h2 {
 nav {
   display: flex;
   align-items: center;
+  font-weight: 400;
 }
 
 .interval {
@@ -100,15 +129,17 @@ nav a {
 /*Banner*/
 .banner {
   display: flex;
-  padding: 2rem 1.5rem;
+  align-items: center;
   background-color: #D9D9D9;
   position: relative;
   top: 4rem;
+  padding-right: 1.5rem;
+  width: 100%;
 }
 
 .img-container {
   width: 60%;
-  padding-right: 1.5rem;
+  padding: 2rem 1.5rem;
 }
 
 .banner img {
@@ -116,26 +147,40 @@ nav a {
 }
 
 .learn {
-  width: 35%;
+  width: 40%;
 }
 
 h1 {
   font-size: 3.5rem;
+  padding-top: 2rem;
 }
 
-.button {
-  color: #ffffff;
-  background: #6b6b6b;
+button {
+  background-color: #6b6b6b;
   padding: .5rem 0;
+  margin: 2rem 0;
   text-align: center;
-  width: 90%;
+  width: 70%;
 }
+
+button p {
+  color: #ffffff;
+}
+
+button:hover {
+  background-color: #ffa812;
+}
+
+.banner h2, .main h2 {
+  font-weight: 300;
+  padding: 1.5rem 0;
+}
+
 
 
 /*Main*/
 .main {
   display: flex;
-  padding: 0 1.5rem;
   background-color: #ffffff;
   margin-top: 4rem;
 }
@@ -150,26 +195,50 @@ h1 {
   width: 100%;
 }
 
+.quote {
+  color: #6b6b6b;
+  font-size: 1.5rem;
+}
+
+.main p {
+  padding: 2rem 0;
+  font-size: 1.25rem;
+  color: #000000;
+}
+
 .bulletins {
   width: 40%;
-  padding: 1rem;
+  padding-top: 1rem;
 }
 
 .bulletin {
   display: flex;
-  min-width: 35%;
-  margin-top: 1rem;
-  border-bottom: 3px double #D9D9D9;
+  align-items: center;
+  padding: 1rem;
+  margin: 0;
+  border-bottom: 4px double #D9D9D9;
+  line-height: 1.4;
 }
 
 .bulletin .img-container {
-  padding: 0 0 1rem 0;
+  min-width: 35%;
   border: 0;
+  padding: 0;
 }
 
 .bulletin .content {
   width: 65%;
   padding-left: 1rem;
+}
+
+.bulletin h2 {
+  color: #000000;
+  font-weight: 700;
+  padding: 0;
+}
+
+.bulletin p {
+  padding: .5rem 0;
 }
 
 .guest {
@@ -258,4 +327,8 @@ footer {
 
 .right span {
   margin-left: 1.25rem;
+}
+
+footer a {
+  color: #6b6b6b;
 }
