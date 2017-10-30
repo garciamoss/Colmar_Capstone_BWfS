@@ -237,6 +237,9 @@ button:hover {
 }
 
 .bulletin p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  color: #6b6b6b;
   padding: .5rem 0;
 }
 
@@ -285,7 +288,6 @@ button:hover {
 /*Thesis*/
 .thesis {
   display: block;
-  padding: 2rem 1.5rem;
   text-align: center;
 }
 
@@ -299,17 +301,28 @@ video {
   width: 100%;
 }
 
+video {
+  padding-bottom: 1.5rem;
+}
+
+.thesis p {
+  padding-top: .5rem;
+}
+
 .exhibits {
   display: block;
   width: 40%;
+  padding-top: 2rem;
 }
 
 .exhibit {
   display: flex;
+  align-items: center;
 }
 
 .exhibit .img-container{
-  width: 35%;
+  padding: 1rem;
+  min-width: 35%;
 }
 
 .exhibit img {
@@ -318,6 +331,10 @@ video {
 
 .exhibit .content {
   width: 65%;
+}
+
+.gray {
+  background-color: #D9D9D9;
 }
 
 
