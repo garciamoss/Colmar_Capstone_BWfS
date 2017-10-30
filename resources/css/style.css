@@ -71,6 +71,12 @@ p {
   margin: 0;
 }
 
+.mobile {
+  display: none;
+}
+
+
+
 /*Header Section*/
 header {
   display: flex;
@@ -285,6 +291,7 @@ button:hover {
 }
 
 
+
 /*Thesis*/
 .thesis {
   display: block;
@@ -338,6 +345,7 @@ video {
 }
 
 
+
 /*Footer*/
 footer {
   display: flex;
@@ -352,4 +360,25 @@ footer {
 
 footer a {
   color: #6b6b6b;
+}
+
+
+
+/*Media Qureries ≤ 1200px*/
+@media only screen and (max-width: 1200px) {
+  .bulletin .img-container {
+    display: none;
+  }
+  .bulletin .mobile {
+    display: block;
+    width: 100%;
+    justify-content: center;
+  }
+  .bulletin .content {
+    width: 100%;
+    padding: 0;
+  }
+  .bulletin {
+    flex-direction: column;
+  }
 }
