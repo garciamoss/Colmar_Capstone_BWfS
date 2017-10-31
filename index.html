@@ -15,10 +15,10 @@
       <!--Navigation-->
         <div class="navbar">
           <div class="logo">
-            <img src="resources/images/ic-logo.svg">
+            <img src="resources/images/ic-logo.svg" alt="Logo">
             <h2>COLMAR<span class="light">ACADEMY</span></h2>
           </div>
-          <nav>
+          <nav class="desktop">
             <span><a href="#">On campus</a></span>
             <span class="interval"></span>
             <span><a href="#">Online</a></span>
@@ -27,7 +27,14 @@
             <span class="interval"></span>
             <span><a href="#">Sign in</a></span>
           </nav>
+          <nav class="mobile">
+            <a href="#"><img src="resources/images/ic-logo.svg" alt="Logo"></a>
+            <a href="#"><img src="resources/images/ic-on-campus.svg" alt="On campus"></a>
+            <a href="#"><img src="resources/images/ic-online.svg" alt="Online"></a>
+            <a href="#"><img src="resources/images/ic-login.svg" alt="Sign in"></a>
+          </nav>
         </div>
+
         <!--Banner-->
         <div class="banner">
           <div class="img-container">
@@ -38,12 +45,12 @@
             <h2>Lorem ipsum dolor sit amet, consectetur adipiscing </h2>
             <button>
               <a href="#"><p>Start Here</p></a>
-          </button>
+          	</button>
           </div>
         </div>
       </div>
     </header>
-    
+
     <!--Main Section-->
     <div class="bigbox">
       <div class="main">
@@ -57,11 +64,10 @@
         </div>
         <div class="bulletins">
           <div class="bulletin">
-            <div class="img-container">
+            <div class="img-container desktop">
               <img src="resources/images/information-orientation.jpg" alt="orientation">
             </div>
-<!--Mobile-->
-			<div class="img-container mobile"> 
+            <div class="img-container mobile">
               <img src="resources/images/information-orientation-mobile.jpg" alt="orientation">
             </div>
             <div class="content">
@@ -71,11 +77,10 @@
             </div>
           </div>
           <div class="bulletin">
-            <div class="img-container">
+            <div class="img-container desktop">
               <img src="resources/images/information-campus.jpg" alt="location">
             </div>
-<!--Mobile-->
-            <div class="img-container mobile"> 
+			<div class="img-container mobile">
               <img src="resources/images/information-campus-mobile.jpg" alt="location">
             </div>
             <div class="content">
@@ -85,7 +90,7 @@
             </div>
           </div>
           <div class="guest bulletin">
-            <div class="img-container">
+            <div class="img-container desktop">
               <img src="resources/images/information-guest-lecture.jpg" alt="guest lecture">
             </div>
             <div class="img-container mobile">
