@@ -69,6 +69,7 @@ a {
   text-decoration: none;
   color: #318CE7;
 }
+
 a:hover {
     background-color: #ffa812;
     color: #ffffff;
@@ -172,6 +173,7 @@ button {
   margin: 2rem 0;
   text-align: center;
   width: 70%;
+  border: 0;
 }
 button p {
   color: #ffffff;
@@ -286,8 +288,12 @@ button:hover {
   width: 100%;
 }
 
-.sixpack .content{
+.sixpack .content {
   padding: 1rem 1rem 1.5rem 1rem;
+}
+
+.sixpack h2:hover {
+  color: #ffa812;
 }
 
 .course {
@@ -341,6 +347,10 @@ video {
   width: 65%;
 }
 
+.exhibit h2:hover{
+  color: #ffa812;
+}
+
 .gray {
   background-color: #D9D9D9;
 }
@@ -373,54 +383,10 @@ footer a {
   p {
     font-size: 1.2rem;
   }
-}
-
-
-/*Media Queries ≤ 1080px*/
-@media only screen and (max-width: 1080) {
-    h1 {
-    font-size: 2.625rem;
-  }
-  .banner h2 {
-    font-size: 1.6rem;
-    padding-top: 2rem;
-  }
-}
-
-
-/*Media Queries ≤ 840px*/
-@media only screen and (max-width: 840px) {
-  header .desktop, .logo {
-    display: none;
-  }
-  header .mobile {
-    display: flex;
-    width: 98%;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .banner {
-    flex-direction: column;
-    padding-bottom: 2rem;
-  }
-  .banner .img-container {
-    width: auto;
-    padding: 0;
-  }
-  .learn {
-    width: auto;
-  }
-  button {
-    width: 50%;
-    margin: 0 25%;
-  }
-  .learn h2 {
-    padding-top: 2rem;
-    padding-bottom: 1.5rem;
-  }
-
   .bulletin {
     flex-direction: column;
+    width: 100%;
+    padding: 1rem;
   }
   .bulletin .desktop {
     display: none;
@@ -438,50 +404,111 @@ footer a {
    .bulletin .content{
     width: 100%;
    }
+   .guest {
+    background-color: #ffffff;
+   }
+}
+
+
+/*Media Queries ≤ 1080px*/
+@media only screen and (max-width: 1080) {
+    h1 {
+    font-size: 2.625rem;
+  }
+  .banner h2 {
+    font-size: 1.6rem;
+    padding-top: 2rem;
+  }
+}
+
+
+/*Media Queries ≤ 780px*/
+@media only screen and (max-width: 780px) {
+  header .desktop, .logo {
+    display: none;
+  }
+  header .mobile {
+    display: flex;
+    width: 98%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .banner {
+    flex-direction: column;
+    padding: 0
+  }
+  .banner .img-container {
+    width: auto;
+    padding: 0;
+  }
+  .learn {
+    width: auto;
+    padding: 1rem 2rem;
+  }
+  button {
+    width: 50%;
+    margin: 0 25% 2rem;
+  }
+  .learn h2 {
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .quote.img-container, .exhibits, .right {
+    display: none;
+  }
+  .bulletins {
+    width: auto;
+  }
+  
 
   .sixpack .img-container {
     width: 47%;
+  }
+
+  .gallery .img-container {
+    width: auto;
+    padding: 1rem 0 1.5rem 0;
   }
 
   .thesis p {
     font-size: 1.25rem;
   }
   .exhibit {
-    flex-direction: column;
-    border-bottom: 1px solid #D9D9D9;
-    padding-bottom: 1rem;
-  }
-  .exhibit .img-container {
     display: none;
   }
-  .exhibit .content {
-    width: 100%;
+}
+   
+
+
+/*Media Queries ≤ 660px*/
+@media only screen and (max-width: 660px) {
+  .grid {
+    padding: 0 1rem;
   }
-  .gray {
-    background-color: #ffffff;
+  .sixpack .img-container {
+    width: 100%;
   }
 }
 
+
+
+
 /*Media Queries ≤ 480px*/
 @media only screen and (max-width: 480px) {
-  .quote.img-container, .exhibits, .right {
-    display: none;
-  }
-
-.bulletins, .bulletin .img-container, .gallery .img-container {
+  .bulletins, .bulletin .img-container {
     width: auto;
     padding: 0;
   }
 
-  .learn, .gallery .content {
+  .learn {
     padding: 0 1rem;
   }
 
-
-
-  .gallery {
-    flex-direction: column;
+  .sixpack img, .sixpack p, .thesis .content {
+    display: none;
   }
+
 
   h1 {
     font-size: 2.5rem;
